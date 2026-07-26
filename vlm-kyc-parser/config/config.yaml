@@ -1,0 +1,17 @@
+model:
+  name: "Qwen/Qwen2-VL-2B-Instruct"
+  load_in_4bit: true
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules: ["q_proj", "v_proj", "k_proj"]
+
+training:
+  dataset_name: "naver-clova-ix/cord-v2"
+  output_dir: "./outputs/adapters/"
+  batch_size: 2
+  learning_rate: 2.0e-4
+  epochs: 3
+  warmup_ratio: 0.1
