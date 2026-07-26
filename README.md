@@ -1,10 +1,10 @@
-# 🆔 Automated KYC Identity Card & Document Parser
+# Automated KYC Identity Card & Document Parser
 
 A fine-tuned Vision-Language Model (`Qwen2-VL-2B-Instruct`) using **PyTorch**, **PEFT (QLoRA)**, and **BitsAndBytes 4-bit quantization** to parse unstructured identity documents into structured JSON with visual bounding box grounding.
 
 ---
 
-## 🏗️ Architecture & Project Structure
+## Architecture & Project Structure
 
 ```text
 vlm-kyc-parser/
